@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface HTTPToolAppDelegate : NSObject <NSApplicationDelegate>
+@interface HTTPToolAppDelegate : NSObject <NSApplicationDelegate,RKRequestDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 

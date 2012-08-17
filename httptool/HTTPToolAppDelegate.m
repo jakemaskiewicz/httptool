@@ -6,9 +6,13 @@
 //  Copyright (c) 2012 Jacob Maskiewicz. All rights reserved.
 //
 
+#import <RestKit/RestKit.h>
+
 #import "HTTPToolAppDelegate.h"
 
 @implementation HTTPToolAppDelegate
+
+@synthesize window = _window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
