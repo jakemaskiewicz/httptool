@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'httptool' target in the 'httptool' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

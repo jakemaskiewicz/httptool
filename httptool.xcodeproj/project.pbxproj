@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3E774E115DDCD7900759959 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E774E015DDCD7900759959 /* Cocoa.framework */; };
+		E3E774EB15DDCD7900759959 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3E774E915DDCD7900759959 /* InfoPlist.strings */; };
+		E3E774ED15DDCD7900759959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E774EC15DDCD7900759959 /* main.m */; };
+		E3E774F115DDCD7900759959 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E3E774EF15DDCD7900759959 /* Credits.rtf */; };
+		E3E774F415DDCD7900759959 /* HTTPToolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E774F315DDCD7900759959 /* HTTPToolAppDelegate.m */; };
+		E3E774F715DDCD7900759959 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E774F515DDCD7900759959 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E3E774DC15DDCD7900759959 /* httptool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = httptool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E774E015DDCD7900759959 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E3E774E315DDCD7900759959 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E3E774E415DDCD7900759959 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E3E774E515DDCD7900759959 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E3E774E815DDCD7900759959 /* httptool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "httptool-Info.plist"; sourceTree = "<group>"; };
+		E3E774EA15DDCD7900759959 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E3E774EC15DDCD7900759959 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3E774EE15DDCD7900759959 /* httptool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "httptool-Prefix.pch"; sourceTree = "<group>"; };
+		E3E774F015DDCD7900759959 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E3E774F215DDCD7900759959 /* HTTPToolAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPToolAppDelegate.h; sourceTree = "<group>"; };
+		E3E774F315DDCD7900759959 /* HTTPToolAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPToolAppDelegate.m; sourceTree = "<group>"; };
+		E3E774F615DDCD7900759959 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3E774D915DDCD7900759959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E774E115DDCD7900759959 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3E774D115DDCD7900759959 = {
+			isa = PBXGroup;
+			children = (
+				E3E774E615DDCD7900759959 /* httptool */,
+				E3E774DF15DDCD7900759959 /* Frameworks */,
+				E3E774DD15DDCD7900759959 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3E774DD15DDCD7900759959 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3E774DC15DDCD7900759959 /* httptool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3E774DF15DDCD7900759959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3E774E015DDCD7900759959 /* Cocoa.framework */,
+				E3E774E215DDCD7900759959 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3E774E215DDCD7900759959 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3E774E315DDCD7900759959 /* AppKit.framework */,
+				E3E774E415DDCD7900759959 /* CoreData.framework */,
+				E3E774E515DDCD7900759959 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E3E774E615DDCD7900759959 /* httptool */ = {
+			isa = PBXGroup;
+			children = (
+				E3E774F215DDCD7900759959 /* HTTPToolAppDelegate.h */,
+				E3E774F315DDCD7900759959 /* HTTPToolAppDelegate.m */,
+				E3E774F515DDCD7900759959 /* MainMenu.xib */,
+				E3E774E715DDCD7900759959 /* Supporting Files */,
+			);
+			path = httptool;
+			sourceTree = "<group>";
+		};
+		E3E774E715DDCD7900759959 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3E774E815DDCD7900759959 /* httptool-Info.plist */,
+				E3E774E915DDCD7900759959 /* InfoPlist.strings */,
+				E3E774EC15DDCD7900759959 /* main.m */,
+				E3E774EE15DDCD7900759959 /* httptool-Prefix.pch */,
+				E3E774EF15DDCD7900759959 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3E774DB15DDCD7900759959 /* httptool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3E774FA15DDCD7900759959 /* Build configuration list for PBXNativeTarget "httptool" */;
+			buildPhases = (
+				E3E774D815DDCD7900759959 /* Sources */,
+				E3E774D915DDCD7900759959 /* Frameworks */,
+				E3E774DA15DDCD7900759959 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = httptool;
+			productName = httptool;
+			productReference = E3E774DC15DDCD7900759959 /* httptool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3E774D315DDCD7900759959 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HTTPTool;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Jacob Maskiewicz";
+			};
+			buildConfigurationList = E3E774D615DDCD7900759959 /* Build configuration list for PBXProject "httptool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E3E774D115DDCD7900759959;
+			productRefGroup = E3E774DD15DDCD7900759959 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3E774DB15DDCD7900759959 /* httptool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3E774DA15DDCD7900759959 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E774EB15DDCD7900759959 /* InfoPlist.strings in Resources */,
+				E3E774F115DDCD7900759959 /* Credits.rtf in Resources */,
+				E3E774F715DDCD7900759959 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3E774D815DDCD7900759959 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3E774ED15DDCD7900759959 /* main.m in Sources */,
+				E3E774F415DDCD7900759959 /* HTTPToolAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E3E774E915DDCD7900759959 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3E774EA15DDCD7900759959 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E3E774EF15DDCD7900759959 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3E774F015DDCD7900759959 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E3E774F515DDCD7900759959 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3E774F615DDCD7900759959 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3E774F815DDCD7900759959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E3E774F915DDCD7900759959 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E3E774FB15DDCD7900759959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "httptool/httptool-Prefix.pch";
+				INFOPLIST_FILE = "httptool/httptool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E3E774FC15DDCD7900759959 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "httptool/httptool-Prefix.pch";
+				INFOPLIST_FILE = "httptool/httptool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3E774D615DDCD7900759959 /* Build configuration list for PBXProject "httptool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E774F815DDCD7900759959 /* Debug */,
+				E3E774F915DDCD7900759959 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3E774FA15DDCD7900759959 /* Build configuration list for PBXNativeTarget "httptool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3E774FB15DDCD7900759959 /* Debug */,
+				E3E774FC15DDCD7900759959 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3E774D315DDCD7900759959 /* Project object */;
+}
