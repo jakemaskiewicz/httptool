@@ -79,11 +79,15 @@
     NSString* baseURL = [NSString stringWithFormat:@"%@%@",
                          self.protocol.titleOfSelectedItem,
                          self.baseURL.stringValue];
+        
+    if (![baseURL isEqualToString:[RKClient sharedClient].baseURL.absoluteString]) {
+        
+        NSLog(@"Base URL Changed");
+        [RKClient setSharedClient:[RKClient clientWithBaseURLString:baseURL]];
+    }
     
-    [RKClient setSharedClient:[RKClient clientWithBaseURLString:baseURL]];
-    
-    [RKClient sharedClient].disableCertificateValidation = (self.ignoreSSL.state
-                                                            == NSOnState);
+    [RKClient sharedClient].disableCertificateValidation =
+        (self.ignoreSSL.state == NSOnState);
     
     printf("\n\n");
 
@@ -107,6 +111,8 @@
     
     printf("\n\n");
     NSLog(@"RESPONSE RECIEVED!");
+    
+    self.uriPath.stringValue = response.URL.path;
     
     NSArray* keys = [response.allHeaderFields allKeys];
     
@@ -135,7 +141,9 @@
 
     NSError* e = nil;
     
-    id json = [NSJSONSerialization JSONObjectWithData:response.body options:NSJSONWritingPrettyPrinted error:&e];
+    id json = [NSJSONSerialization JSONObjectWithData:response.body
+                                              options:NSJSONWritingPrettyPrinted
+                                                error:&e];
     
     if (!json) {
         NSLog(@"json parse error: %@",e);
@@ -143,9 +151,11 @@
         body = [NSString stringWithFormat:@"%@",json];
     }
 
-    [[self.outputView textStorage] setAttributedString: [[NSAttributedString alloc] initWithString:body]];
+    [[self.outputView textStorage] setAttributedString:
+     [[NSAttributedString alloc] initWithString:body]];
     
-    [[self.outputView textStorage] setFont:[NSFont fontWithName:@"Menlo" size:13.0]];
+    [[self.outputView textStorage] setFont:
+     [NSFont fontWithName:@"Menlo" size:13.0]];
     
     
 }

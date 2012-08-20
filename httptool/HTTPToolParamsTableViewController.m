@@ -47,7 +47,7 @@
     
     [self.paramTable abortEditing];
     
-    if (row >= 0 && row < [self.list count]) [self.list removeObjectAtIndex:row];
+    if(row >= 0 && row < [self.list count]) [self.list removeObjectAtIndex:row];
     [self.paramTable reloadData];
 }
 
@@ -64,7 +64,8 @@
     
 }
 
-- (void)tableView:(NSTableView *)tableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+- (void)tableView:(NSTableView *)tableView setObjectValue:(id)object
+   forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
 
     NSMutableDictionary* d = [self.list objectAtIndex:row];
     
